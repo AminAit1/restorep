@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Gourmet - Fine Dining Restaurant</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="restaurant-style.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">🍽️ Demo site</div>
+            <div class="logo">🍽️ Le Gourmet</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
@@ -34,91 +34,76 @@
             <h2>Ons Menu</h2>
             <p class="section-subtitle">Seizoensgebonden ingrediënten, met passie bereid</p>
             
-            <div class="menu-categories">
-                <div class="menu-category">
-                    <h3>🥗 Voorgerechten</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Belgische Garnaalkroketten</h4>
-                                <span class="price">€14</span>
-                            </div>
+            <!-- Menu Tabs -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="voorgerechten">🥗 Voorgerechten</button>
+                <button class="menu-tab" data-category="hoofdgerechten">🍖 Hoofdgerechten</button>
+                <button class="menu-tab" data-category="desserts">🍰 Desserts</button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="menu-content-wrapper">
+                <div class="menu-category-content active" data-category="voorgerechten">
+                    <div class="menu-items-grid">
+                        <div class="menu-card">
+                            <h4>Belgische Garnaalkroketten</h4>
                             <p>Huisgemaakte kroketten met Noordzeegarnalen, citroen-dillemayonaise</p>
+                            <span class="price">€14</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Carpaccio van Rundvlees</h4>
-                                <span class="price">€16</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Carpaccio van Rundvlees</h4>
                             <p>Met rucola, Parmezaanse kaas, truffelmayonaise en pijnboompitten</p>
+                            <span class="price">€16</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Soep van de Dag</h4>
-                                <span class="price">€8</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Soep van de Dag</h4>
                             <p>Vraag naar onze huisgemaakte seizoenssoep</p>
+                            <span class="price">€8</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="menu-category">
-                    <h3>🍖 Hoofdgerechten</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Stoofvlees op Grootmoeders Wijze</h4>
-                                <span class="price">€22</span>
-                            </div>
+                <div class="menu-category-content" data-category="hoofdgerechten">
+                    <div class="menu-items-grid">
+                        <div class="menu-card">
+                            <h4>Stoofvlees op Grootmoeders Wijze</h4>
                             <p>Met verse frieten en seizoensgroenten</p>
+                            <span class="price">€22</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Gegrilde Zeebaars</h4>
-                                <span class="price">€26</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Gegrilde Zeebaars</h4>
                             <p>Met aardappelpuree, spinazie en witte wijnsaus</p>
+                            <span class="price">€26</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Eend à l'Orange</h4>
-                                <span class="price">€28</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Eend à l'Orange</h4>
                             <p>Met aardappelgratin en seizoensgroenten</p>
+                            <span class="price">€28</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Vegetarische Risotto</h4>
-                                <span class="price">€19</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Vegetarische Risotto</h4>
                             <p>Met paddenstoelen, truffelolie en Parmezaanse kaas</p>
+                            <span class="price">€19</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="menu-category">
-                    <h3>🍰 Desserts</h3>
-                    <div class="menu-items">
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Dame Blanche</h4>
-                                <span class="price">€8</span>
-                            </div>
+                <div class="menu-category-content" data-category="desserts">
+                    <div class="menu-items-grid">
+                        <div class="menu-card">
+                            <h4>Dame Blanche</h4>
                             <p>Vanille-ijs met warme chocoladesaus en slagroom</p>
+                            <span class="price">€8</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Crème Brûlée</h4>
-                                <span class="price">€9</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Crème Brûlée</h4>
                             <p>Klassieke vanilleroom met gekarameliseerde suiker</p>
+                            <span class="price">€9</span>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-header">
-                                <h4>Tiramisu Maison</h4>
-                                <span class="price">€9</span>
-                            </div>
+                        <div class="menu-card">
+                            <h4>Tiramisu Maison</h4>
                             <p>Huisgemaakt met Belgische chocolade</p>
+                            <span class="price">€9</span>
                         </div>
                     </div>
                 </div>
@@ -188,61 +173,45 @@
             <h2>Reserveer Een Tafel</h2>
             <p class="section-subtitle">Wij kijken ernaar uit u te verwelkomen</p>
             
-            <div class="reservation-content">
-                <div class="contact-info">
-                    <h3>Contactgegevens</h3>
-                    <div class="info-item">
-                        <span class="icon">📍</span>
-                        <div>
-                            <strong>Adres</strong>
-                            <p>Grote Markt 123<br>3500 Hasselt, België</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="icon">📞</span>
-                        <div>
-                            <strong>Telefoon</strong>
-                            <p>+32 11 123 456</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="icon">📧</span>
-                        <div>
-                            <strong>Email</strong>
-                            <p>info@legourmet.be</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <span class="icon">🕐</span>
-                        <div>
-                            <strong>Openingsuren</strong>
-                            <p>Dinsdag - Zaterdag: 12:00 - 14:30 & 18:00 - 22:00<br>
-                            Zondag: 12:00 - 15:00<br>
-                            Maandag: Gesloten</p>
-                        </div>
-                    </div>
+            <div class="reservation-simple">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Bel Ons</h3>
+                    <a href="tel:+3211123456" class="contact-link">+32 11 123 456</a>
+                    <p>Ma-Za: 10:00 - 21:00</p>
                 </div>
 
-                <form class="reservation-form" name="reservations" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="reservations">
-                    <input type="text" name="naam" placeholder="Uw Naam *" required>
-                    <input type="email" name="email" placeholder="Uw Email *" required>
-                    <input type="tel" name="telefoon" placeholder="Telefoonnummer *" required>
-                    <input type="date" name="datum" placeholder="Datum *" required>
-                    <input type="time" name="tijd" placeholder="Tijd *" required>
-                    <select name="personen" required>
-                        <option value="">Aantal Personen *</option>
-                        <option value="1">1 persoon</option>
-                        <option value="2">2 personen</option>
-                        <option value="3">3 personen</option>
-                        <option value="4">4 personen</option>
-                        <option value="5">5 personen</option>
-                        <option value="6">6 personen</option>
-                        <option value="7+">7+ personen</option>
-                    </select>
-                    <textarea name="opmerking" placeholder="Bijzondere Wensen of Allergieën" rows="3"></textarea>
-                    <button type="submit" class="cta-button">Reserveer Nu</button>
-                </form>
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Ons</h3>
+                    <a href="mailto:info@legourmet.be" class="contact-link">info@legourmet.be</a>
+                    <p>We antwoorden binnen 24u</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Bezoek Ons</h3>
+                    <p class="address">Grote Markt 123<br>3500 Hasselt, België</p>
+                    <a href="https://maps.google.com" target="_blank" class="maps-link">Open in Maps →</a>
+                </div>
+            </div>
+
+            <div class="hours-info">
+                <h3>🕐 Openingsuren</h3>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <span>Dinsdag - Zaterdag</span>
+                        <span>12:00 - 14:30 & 18:00 - 22:00</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Zondag</span>
+                        <span>12:00 - 15:00</span>
+                    </div>
+                    <div class="hours-item closed">
+                        <span>Maandag</span>
+                        <span>Gesloten</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -250,10 +219,4 @@
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Le Gourmet Restaurant. Alle rechten voorbehouden.</p>
-            <p style="margin-top: 0.5rem;">Volg ons op Instagram | Facebook</p>
-        </div>
-    </footer>
-
-    <script src="restaurant-script.js"></script>
-</body>
-</html>
+            <p style="margin-top: 0.5rem;">Volg ons op
